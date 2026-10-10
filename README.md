@@ -86,6 +86,8 @@ Runway / Sora (English):
 - [examples/suspense-horror-zh.md](examples/suspense-horror-zh.md) — 《第八十四级台阶》
 - [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late*
 
+Both samples scan clean with the bundled `scripts/deai-check.py`: 0 filler words, 0 cliché gestures, 0 "not X but Y", 0 triads. The sentence-length spread (中文 9.4 / English 10.9 stddev) is exactly the bursty rhythm the de-AI layer targets.
+
 ## How the style distillation works
 
 Nine axes — sentence & punctuation, paragraphing, vocabulary, dialogue, point of view, imagery, emotional intensity, rhythm & structure, and forbidden moves. Three rules carry it:

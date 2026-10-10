@@ -2,11 +2,11 @@
 
 The voice started the night I moved in.
 
-I had been unpacking boxes until two, too tired to cook, and I had just killed the bedroom light when I heard it: a man's voice, low, through the wall, saying something I couldn't quite make out.
+I had been unpacking boxes until two, too tired to cook, and I had just killed the bedroom light when I heard it: a man's voice, low, through the wall, saying something I couldn't make out.
 
 The apartment next door was empty. I had checked. The agent had told me so twice, in that bright way agents use when they want you to sign fast.
 
-I put my ear to the wall. Silence. Then, three seconds later, the voice came again. This time I heard it clearly.
+I put my ear to the wall. Silence. Then, three seconds later, the voice came again. This time I heard it.
 
 It was my own voice.
 
@@ -24,7 +24,7 @@ I should have left then. But the rent was a third of anywhere else in the city, 
 
 So I stayed.
 
-The rules were simple, and I learned them in the first week. Whatever I said, the wall said it back, three seconds late. Not an echo — an echo comes from the same room, and it doesn't wait. This was a patient, exact thing. I said goodnight, and three seconds later the wall said goodnight. I coughed, and three seconds later, so did the wall.
+The rules were simple, and I learned them in the first week. Whatever I said, the wall said it back, three seconds late. Not an echo. An echo comes from the same room, and it doesn't wait. This was a patient, exact thing. I said goodnight, and three seconds later the wall said goodnight. I coughed, and three seconds later, so did the wall.
 
 The repetition wasn't what frightened me. What frightened me was that it never made a mistake. I tried to trip it. I whispered, I mumbled, I said words in a language I barely knew. Three seconds later my voice came back, every syllable in place.
 
@@ -40,10 +40,10 @@ I held my breath.
 
 Three seconds later, it added, quietly: "You can't hold it forever."
 
-I left that night. I left everything — the boxes, the bed, the deposit. I walked to the corner and checked into a motel with no walls to speak of, and I lay down with the light on.
+I left that night. I left everything: the boxes, the bed, the deposit. I walked to the corner and checked into a motel with no walls to speak of, and I lay down with the light on.
 
 And then I heard it. Not through a wall this time. From inside my own head, three seconds after every thought, patient and exact.
 
 "Wherever you go," it said, in my voice, "I'm three seconds behind."
 
-— The End
+The End

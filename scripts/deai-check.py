@@ -26,7 +26,7 @@ TELLS = {
                     '得天独厚', '独一无二', '前所未有', '不可磨灭', '带着一丝苦笑', '带着三分'],
         'negative_parallel': [r'不是.{1,30}而是', r'不仅.{1,30}更是', r'不只是.{1,30}更是',
                               r'与其说.{1,30}不如说'],
-        'triad': ['首先', '其次', '最后', '第一', '第二', '第三'],
+        'triad': [r'第一.{0,40}第二.{0,40}第三', r'首先.{0,40}其次.{0,40}最后'],
     },
     'en': {
         'filler': ['However', 'Moreover', 'Furthermore', 'Additionally', 'In conclusion', 'Ultimately',
@@ -38,7 +38,8 @@ TELLS = {
         'gesture': [],
         'negative_parallel': [r'\bnot\b.{1,40}\bbut\b', r'\bNot just\b.{1,40}\bbut\b',
                               r'\brather than\b'],
-        'triad': ['First', 'Second', 'Finally', 'Firstly', 'Secondly', 'Lastly'],
+        'triad': [r'\bFirst\b.{0,60}\bSecond\b.{0,60}\b(?:Finally|Third)\b',
+                  r'\bFirstly\b.{0,60}\bSecondly\b.{0,60}\b(?:Lastly|Thirdly)\b'],
     },
     'fr': {
         'filler': ['En effet', 'Par ailleurs', 'De plus', 'En outre', 'En conclusion',
@@ -114,10 +115,13 @@ def main():
                         hits.append((pat, i, ln.strip()[:64]))
         return hits
 
-    filler = scan(tells['filler'])
+    if args.lang in ('zh', 'ja'):
+        filler = scan(tells['filler'])
+    else:
+        filler = scan([r'\b' + re.escape(p) + r'\b' for p in tells['filler']], regex=True)
     gesture = scan(tells['gesture'])
     negpar = scan(tells['negative_parallel'], regex=True)
-    triad = scan(tells['triad'])
+    triad = scan(tells['triad'], regex=True)
 
     ndash = text.count('—') + text.count('--')
     dash_per_1k = ndash / (n_units / 1000) if n_units else 0
@@ -155,7 +159,7 @@ def main():
     for pat, i, s in negpar:
         out.append('  L%d  [%s]  %s' % (i, pat, s))
     out.append('')
-    out.append('--- 结构 tells: 三段式词 (%d 处) ---' % len(triad))
+    out.append('--- 结构 tells: 三段式排比(成组出现) (%d 处) ---' % len(triad))
     for pat, i, s in triad:
         out.append('  L%d  [%s]  %s' % (i, pat, s))
     out.append('')
