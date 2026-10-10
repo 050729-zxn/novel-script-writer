@@ -1,0 +1,4 @@
+# 个人喂文生成的文风卡（含原文摘录，不随仓库发布）
+style-cards/*.md
+!style-cards/README.md
+!style-cards/_template.md

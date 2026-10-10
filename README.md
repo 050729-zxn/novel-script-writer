@@ -1,0 +1,97 @@
+# novel-script-writer
+
+A universal literary-writing skill for Claude Code. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.
+
+## Why this exists
+
+LLMs write prose that is grammatically flawless and stylistically dead. Same sentence rhythms, same filler words, same "not X but Y" constructions, same three-part lists. Ask an LLM to imitate an author and you get a costume, not a fingerprint.
+
+This skill fixes both problems:
+
+1. **De-AI** — it targets *structural* tells that survive model updates, not word lists that go stale the moment a new model ships.
+2. **Style** — it ships a distillation method that turns any sample of real writing into a reusable "style card", so the skill writes *like the author*, not *about the author*.
+
+## What it does
+
+- **On-demand outputs** — worldbuilding, outline, full novel, or AI short-drama script. Only what you ask for, nothing bolted on.
+- **De-AI flavor** — removes filler, cliché gestures, "not X but Y", forced triads, and meaningless elevation, per language.
+- **Style distillation (feed-text)** — feed a few chapters and it extracts a 9-axis fingerprint with real anchor sentences, then writes and rewrites in that voice. Feed enough authors and it becomes a generalist: any style, on demand.
+- **Multilingual literary writing** — 10 languages (English, Spanish, French, Italian, German, Russian, Japanese, Arabic, Hebrew, Chinese), each with its own AI-tell list, literary norms, and positive literary devices anchored in real public-domain classics.
+- **Literary translation** — 信达雅 (faithful → fluent → elegant), with the target language's de-AI rules applied to the translation too.
+- **Word export** — `scripts/novel2docx.py` for Chinese novel typography (2-char first-line indent, justified, 1.5 line spacing).
+
+## Install
+
+```bash
+mkdir -p ~/.claude/skills
+cp -r novel-script-writer ~/.claude/skills/
+```
+
+Then just ask Claude to write something. The skill triggers on requests to write or generate novels, stories, scripts, imitate an author's style, feed writing samples, or do multilingual literary work.
+
+## Usage
+
+```
+写一个中式玄幻短篇，5000 字，第三人称，主角叫林风，先给大纲再写正文
+```
+
+```
+模仿《龙族》的文笔写一段雨夜独白
+```
+
+```
+Write this scene in English, no AI-slop, then give me the Chinese translation.
+```
+
+```
+写一个 3 分钟 AI 短剧剧本，每个镜头附通用视频提示词，对话用英文、旁白用中文
+```
+
+For the style-imitation ones: feed real text first. The skill distills it into a style card, then writes in that voice.
+
+## How the style distillation works
+
+Nine axes — sentence & punctuation, paragraphing, vocabulary, dialogue, point of view, imagery, emotional intensity, rhythm & structure, and forbidden moves. Three rules carry it:
+
+- **Rules lie, anchor sentences don't.** Every axis must carry 2–3 verbatim sentences from the sample. Rules go abstract; anchors pull you back to the actual voice.
+- **Three times makes a signal.** A trait that appears once is improvisation; in three places it's a signature.
+- **Spice is not a formula.** Signature moves are tools, not a checklist. A short scene uses one or two, never all of them.
+
+The blank template lives in `style-cards/_template.md`. Your own distilled cards stay local — the repo ships no specific author's card, so it's style-agnostic by design. Want a given author's voice? Feed their text.
+
+## Multilingual, anchored in real classics
+
+Each language entry has: literary norms → AI tells → countermeasures → positive literary devices, each device anchored in a verbatim sentence from a public-domain classic:
+
+| Language | Anchor source |
+|---|---|
+| English | *Wuthering Heights*, *Jane Eyre*, *Pride and Prejudice* |
+| Spanish | *Don Quijote* |
+| French | *Madame Bovary* |
+| Italian | *I promessi sposi* |
+| German | *Die Leiden des jungen Werther* |
+| Japanese | 太宰治『人間失格』, 夏目漱石『こころ』 |
+| Russian | *Anna Karenina* (opening) |
+
+## Structure
+
+```
+novel-script-writer/
+├── SKILL.md                          # workflow + writing rules (the core)
+├── references/
+│   ├── ai-flavor-avoidance.md        # Chinese de-AI checklist
+│   ├── style-distillation.md         # 9-axis style fingerprint method
+│   ├── multilingual-writing.md       # per-language literary norms + devices
+│   ├── multilingual-typography.md    # punctuation / indent / RTL rules
+│   ├── genre-playbook.md             # genre essentials (suspense / romance / scifi / ...)
+│   └── video-prompt-format.md        # structured prompts for video-gen AI
+├── scripts/
+│   └── novel2docx.py                 # Markdown → .docx with novel typography
+└── style-cards/
+    ├── README.md
+    └── _template.md                  # blank style-card template
+```
+
+## License
+
+MIT
