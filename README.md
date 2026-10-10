@@ -14,8 +14,9 @@ This skill fixes both problems:
 ## What it does
 
 - **On-demand outputs** — worldbuilding, outline, full novel, or AI short-drama script. Only what you ask for, nothing bolted on.
-- **De-AI flavor** — removes filler, cliché gestures, "not X but Y", forced triads, and meaningless elevation, per language.
+- **De-AI flavor** — removes filler, cliché gestures, "not X but Y", forced triads, and meaningless elevation, per language. Bundled `scripts/deai-check.py` scans any draft and flags the candidate tells before you edit.
 - **Style distillation (feed-text)** — feed a few chapters and it extracts a 9-axis fingerprint with real anchor sentences, then writes and rewrites in that voice. Feed enough authors and it becomes a generalist: any style, on demand.
+- **Long-form continuity** — a serial-state template (characters, foreshadowing, timeline, world rules, chapter hooks) that keeps a 50-chapter novel from contradicting itself, plus a hook taxonomy (5 types) and a pacing/追读力 self-review for web fiction and short drama.
 - **Multilingual literary writing** — 10 languages (English, Spanish, French, Italian, German, Russian, Japanese, Arabic, Hebrew, Chinese), each with its own AI-tell list, literary norms, and positive literary devices anchored in real public-domain classics.
 - **Literary translation** — 信达雅 (faithful → fluent → elegant), with the target language's de-AI rules applied to the translation too.
 - **Word export** — `scripts/novel2docx.py` for Chinese novel typography (2-char first-line indent, justified, 1.5 line spacing).
@@ -81,11 +82,14 @@ novel-script-writer/
 ├── references/
 │   ├── ai-flavor-avoidance.md        # Chinese de-AI checklist
 │   ├── style-distillation.md         # 9-axis style fingerprint method
+│   ├── serial-state.md               # long-form continuity template
 │   ├── multilingual-writing.md       # per-language literary norms + devices
 │   ├── multilingual-typography.md    # punctuation / indent / RTL rules
 │   ├── genre-playbook.md             # genre essentials (suspense / romance / scifi / ...)
+│   ├── hooks-rhythm.md               # chapter hooks (5 types) + pacing / 追读力 review
 │   └── video-prompt-format.md        # structured prompts for video-gen AI
 ├── scripts/
+│   ├── deai-check.py                 # AI-flavor scanner (zh/en/fr/es/de/ja)
 │   └── novel2docx.py                 # Markdown → .docx with novel typography
 └── style-cards/
     ├── README.md
