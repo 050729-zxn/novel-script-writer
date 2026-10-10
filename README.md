@@ -51,6 +51,36 @@ Write this scene in English, no AI-slop, then give me the Chinese translation.
 
 For the style-imitation ones: feed real text first. The skill distills it into a style card, then writes in that voice.
 
+## Examples
+
+What the prompt generator produces — one subject, concrete nouns, layered fields, adapted per tool.
+
+**Character portrait (text-to-image)** — a fantasy swordswoman
+
+即梦 / 可灵 (Chinese, ready to paste):
+
+> 二十岁左右的女剑修,银白长发高束,红边白衣,腰悬细剑,站在山崖边回眸,衣袂被风吹起;云海翻涌的仙山,晨雾弥漫;冷白晨光从侧后方打来;半身、微仰视、浅景深;国风水墨厚涂;高清细节,比例 3:4
+
+Midjourney (English):
+
+> a female sword cultivator in her early twenties, long silver-white hair in a high ponytail, white hanfu with red trim, a slender sword at her waist, standing on a cliff edge looking back, robes billowing in the wind, misty immortal mountains with a sea of clouds, cold morning light from behind, waist-up, slight low angle, shallow depth of field, Chinese ink-wash thick paint style, highly detailed --ar 3:4 --style raw --v 6
+
+**Scene concept (text-to-image)** — cyberpunk street, Stable Diffusion positive + negative:
+
+> positive: (masterpiece, best quality:1.2), cyberpunk city street at night, neon signs, rain-slick road with reflections, a lone figure with an umbrella seen from behind, wide shot, cinematic lighting, highly detailed
+>
+> negative: (worst quality, low quality:1.4), bad anatomy, extra fingers, deformed, blurry, text, watermark, signature
+
+**Short-drama shot (text-to-video)** — a man smoking on a rainy alley
+
+可灵 / 即梦 (Chinese):
+
+> 中近景,缓慢推近。深夜城中村巷口,雨后路面反光。一个穿旧灰夹克的男人蹲在路边,慢慢把烟送到嘴边,烟头明灭。眉头微皱,眼神放空。冷青色路灯从头顶打下,脸一半在光里一半在阴影里,背景有车灯扫过。压抑、写实、电影质感,约 4 秒。
+
+Runway / Sora (English):
+
+> Medium close-up, slow push-in. Late-night alley in an urban village, wet ground reflecting light after rain. A man in an old gray jacket crouches by the roadside, slowly raising a cigarette to his lips, the ember glowing. Furrowed brows, vacant stare. Cold cyan streetlight from above, half his face in light, half in shadow, car headlights sweeping past in the background. Oppressive, realistic, cinematic, about 4 seconds.
+
 ## How the style distillation works
 
 Nine axes — sentence & punctuation, paragraphing, vocabulary, dialogue, point of view, imagery, emotional intensity, rhythm & structure, and forbidden moves. Three rules carry it:
