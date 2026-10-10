@@ -36,3 +36,24 @@
 - 台词:"我不干了。"
 - 提示词:
 `中景,固定机位。明亮现代办公室,落地窗透进自然光。一个穿浅色衬衫的年轻女人把一张纸用力拍在办公桌上,抓起包转身大步走向门口,老板坐在桌后愣住。表情坚定,下巴微抬。正面柔光,整体清冷偏白。干脆利落、都市剧质感,约 5 秒。`
+
+## 主流工具适配
+
+同一句提示词,字段结构不变(景别/运镜/环境/主体动作/表情/光线/氛围/时长),只按工具转**语言**和**运镜词**。
+
+| 工具 | 语言 | 运镜/景别写法 | 备注 |
+|---|---|---|---|
+| 可灵 Kling | 中文 | 「缓慢推近」「环绕运镜」「手持跟拍」 | 支持 5s/10s、画幅、首尾帧 |
+| 即梦 | 中文 | 中文运镜词 | 支持负面提示词、首尾帧 |
+| Vidu / 海螺 / 通义万相 | 中文 | 中文运镜词 | — |
+| Runway Gen-3 | 英文 | "slow dolly in" "orbit shot" "handheld" | 镜头控制 |
+| Pika | 英文 | 简洁英文运镜 | 宜短 |
+| Sora | 英文 | 自然语言长描述 | 支持更长时长 |
+
+**中文版(可灵 / 即梦 / Vidu 直接可用)**
+
+`中近景,缓慢推近。深夜城中村巷口,雨后路面反光。一个穿旧灰夹克的男人蹲在路边,慢慢把烟送到嘴边,烟头明灭。眉头微皱,眼神放空。冷青色路灯从头顶打下,脸一半在光里一半在阴影里,背景有车灯扫过。压抑、写实、电影质感,约 4 秒。`
+
+**英文版(Runway / Pika / Sora)**
+
+`Medium close-up, slow push-in. Late-night alley in an urban village, wet ground reflecting light after rain. A man in an old gray jacket crouches by the roadside, slowly raising a cigarette to his lips, the ember glowing. Furrowed brows, vacant stare. Cold cyan streetlight from above, half his face in light, half in shadow, car headlights sweeping past in the background. Oppressive, realistic, cinematic, about 4 seconds.`

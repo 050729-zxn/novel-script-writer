@@ -19,6 +19,7 @@ This skill fixes both problems:
 - **Long-form continuity** — a serial-state template (characters, foreshadowing, timeline, world rules, chapter hooks) that keeps a 50-chapter novel from contradicting itself, plus a hook taxonomy (5 types) and a pacing/追读力 self-review for web fiction and short drama.
 - **Multilingual literary writing** — 10 languages (English, Spanish, French, Italian, German, Russian, Japanese, Arabic, Hebrew, Chinese), each with its own AI-tell list, literary norms, and positive literary devices anchored in real public-domain classics.
 - **Literary translation** — 信达雅 (faithful → fluent → elegant), with the target language's de-AI rules applied to the translation too.
+- **Image & video prompts** — turns characters, scenes, covers, and short-drama shots into structured text-to-image / text-to-video prompts (即梦 / Midjourney / 可灵 / Stable Diffusion / Runway / Sora): one subject per prompt, concrete nouns over abstract adjectives.
 - **Word export** — `scripts/novel2docx.py` for Chinese novel typography (2-char first-line indent, justified, 1.5 line spacing).
 
 ## Install
@@ -87,7 +88,8 @@ novel-script-writer/
 │   ├── multilingual-typography.md    # punctuation / indent / RTL rules
 │   ├── genre-playbook.md             # genre essentials (suspense / romance / scifi / ...)
 │   ├── hooks-rhythm.md               # chapter hooks (5 types) + pacing / 追读力 review
-│   └── video-prompt-format.md        # structured prompts for video-gen AI
+│   ├── video-prompt-format.md        # structured prompts for video-gen AI
+│   └── image-prompt-format.md        # structured text-to-image prompts (covers / characters / scenes)
 ├── scripts/
 │   ├── deai-check.py                 # AI-flavor scanner (zh/en/fr/es/de/ja)
 │   └── novel2docx.py                 # Markdown → .docx with novel typography
