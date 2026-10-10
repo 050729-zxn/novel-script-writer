@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560">
+  <rect width="920" height="560" fill="#0d1117"/>
+  <text x="460" y="48" fill="#c9d1d9" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" text-anchor="middle" font-weight="bold">同一段,两种写法 / Same scene, two drafts</text>
+
+  <rect x="30" y="80" width="420" height="440" rx="12" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
+  <text x="50" y="120" fill="#f85149" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="bold">AI 味</text>
+  <text x="50" y="165" fill="#c9d1d9" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="16">
+    <tspan x="50" dy="0">他深吸一口气,仿佛整个世界</tspan>
+    <tspan x="50" dy="30">都安静了。他知道,命运的</tspan>
+    <tspan x="50" dy="30">车轮已经开始转动。这</tspan>
+    <tspan x="50" dy="30">不仅是一次挑战,更是</tspan>
+    <tspan x="50" dy="30">一次成长。他的眼中闪过</tspan>
+    <tspan x="50" dy="30">一丝坚定的光。</tspan>
+  </text>
+  <text x="50" y="450" fill="#8b949e" font-family="system-ui,sans-serif" font-size="13">填充词 · 命运套路 · 否定式平行 · 万能动作</text>
+
+  <rect x="470" y="80" width="420" height="440" rx="12" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="490" y="120" fill="#3fb950" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="bold">去 AI 味</text>
+  <text x="490" y="165" fill="#c9d1d9" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="16">
+    <tspan x="490" dy="0">他把烟摁灭在窗台。楼下</tspan>
+    <tspan x="490" dy="30">有人喊了一声,又没了。他</tspan>
+    <tspan x="490" dy="30">数了数口袋里的钱,七块。</tspan>
+    <tspan x="490" dy="30">天亮以前,他得走到桥</tspan>
+    <tspan x="490" dy="30">那边去。</tspan>
+  </text>
+  <text x="490" y="450" fill="#8b949e" font-family="system-ui,sans-serif" font-size="13">具体细节 · 短句错落 · 没有升华</text>
+</svg>

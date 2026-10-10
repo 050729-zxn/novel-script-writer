@@ -2,6 +2,8 @@
 
 A universal literary-writing skill for Claude Code. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.
 
+<p align="center"><img src="assets/deai-vs-ai.svg" alt="The same scene, two drafts: AI flavor vs de-AI'd" width="760"></p>
+
 ## Why this exists
 
 LLMs write prose that is grammatically flawless and stylistically dead. Same sentence rhythms, same filler words, same "not X but Y" constructions, same three-part lists. Ask an LLM to imitate an author and you get a costume, not a fingerprint.
