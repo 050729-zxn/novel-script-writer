@@ -81,6 +81,11 @@ Runway / Sora (English):
 
 > Medium close-up, slow push-in. Late-night alley in an urban village, wet ground reflecting light after rain. A man in an old gray jacket crouches by the roadside, slowly raising a cigarette to his lips, the ember glowing. Furrowed brows, vacant stare. Cold cyan streetlight from above, half his face in light, half in shadow, car headlights sweeping past in the background. Oppressive, realistic, cinematic, about 4 seconds.
 
+**Complete short stories** — the skill also writes finished fiction. Two sample suspense/horror stories, one in each language:
+
+- [examples/suspense-horror-zh.md](examples/suspense-horror-zh.md) — 《第八十四级台阶》
+- [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late*
+
 ## How the style distillation works
 
 Nine axes — sentence & punctuation, paragraphing, vocabulary, dialogue, point of view, imagery, emotional intensity, rhythm & structure, and forbidden moves. Three rules carry it:
