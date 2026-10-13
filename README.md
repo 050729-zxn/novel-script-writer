@@ -1,5 +1,7 @@
 # novel-script-writer
 
+**Make AI write like a person — not like AI.**
+
 A universal literary-writing skill for agentic coding tools — Claude Code, Codex, Cursor, and anything that reads agent skills. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.
 
 <p align="center"><img src="assets/deai-vs-ai.svg" alt="The same scene, two drafts: AI flavor vs de-AI'd" width="760"></p>
@@ -93,10 +95,16 @@ Runway / Sora (English):
 
 > Medium close-up, slow push-in. Late-night alley in an urban village, wet ground reflecting light after rain. A man in an old gray jacket crouches by the roadside, slowly raising a cigarette to his lips, the ember glowing. Furrowed brows, vacant stare. Cold cyan streetlight from above, half his face in light, half in shadow, car headlights sweeping past in the background. Oppressive, realistic, cinematic, about 4 seconds.
 
-**Complete short stories** — the skill also writes finished fiction. Two sample suspense/horror stories, one in each language:
+**Complete short stories** — the skill also writes finished fiction. Two sample suspense/horror stories, one in each language. The English opener, verbatim, so you can hear the voice:
+
+> The voice started the night I moved in. I had just killed the bedroom light when I heard it: a man's voice, low, through the wall. The apartment next door was empty. I had checked.
+>
+> I put my ear to the wall. Silence. Then, three seconds later, the voice came again. This time I heard it.
+>
+> It was my own voice.
 
 - [examples/suspense-horror-zh.md](examples/suspense-horror-zh.md) — 《第八十四级台阶》
-- [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late*
+- [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late* (full story)
 
 Both samples scan clean with the bundled `scripts/deai-check.py`: 0 filler words, 0 cliché gestures, 0 "not X but Y", 0 triads. The sentence-length spread (中文 9.4 / English 10.9 stddev) is exactly the bursty rhythm the de-AI layer targets.
 

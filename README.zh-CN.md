@@ -1,5 +1,7 @@
 # novel-script-writer
 
+**让 AI 写得像人,不像 AI。**
+
 一个通用的文学写作 skill,适用于 Claude Code、Codex、Cursor 等任何能读 agent skills 的工具。写小说、网文、短篇、AI 短剧剧本——任何类型、任何文风、任何语言,把 AI 味洗掉,把文学手艺放回去。
 
 ## 为什么做这个
@@ -74,10 +76,20 @@ cp -r novel-script-writer ~/.claude/skills/
 
 > 二十岁左右的女剑修,银白长发高束,红边白衣,腰悬细剑,站在山崖边回眸,衣袂被风吹起;云海翻涌的仙山,晨雾弥漫;冷白晨光从侧后方打来;半身、微仰视、浅景深;国风水墨厚涂;高清细节,比例 3:4
 
-**完整短篇**(悬疑恐怖,中英各一篇,已通过 deai-check 扫描:填充词 / 万能动作 / 否定式平行 / 三段式全部 0 处):
+Midjourney(英文):
+
+> a female sword cultivator in her early twenties, long silver-white hair in a high ponytail, white hanfu with red trim, a slender sword at her waist, standing on a cliff edge looking back, robes billowing in the wind, misty immortal mountains with a sea of clouds, cold morning light from behind, waist-up, slight low angle, shallow depth of field, Chinese ink-wash thick paint style, highly detailed --ar 3:4 --style raw --v 6
+
+**完整短篇**(悬疑恐怖,中英各一篇,已通过 deai-check 扫描:填充词 / 万能动作 / 否定式平行 / 三段式全部 0 处)。英文开篇,感受一下文笔:
+
+> The voice started the night I moved in. I had just killed the bedroom light when I heard it: a man's voice, low, through the wall. The apartment next door was empty. I had checked.
+>
+> I put my ear to the wall. Silence. Then, three seconds later, the voice came again. This time I heard it.
+>
+> It was my own voice.
 
 - [examples/suspense-horror-zh.md](examples/suspense-horror-zh.md) — 《第八十四级台阶》
-- [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late*
+- [examples/suspense-horror-en.md](examples/suspense-horror-en.md) — *Three Seconds Late*(全文)
 
 ## License
 
