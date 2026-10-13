@@ -1,5 +1,7 @@
 # novel-script-writer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/050729-zxn/novel-script-writer/blob/main/LICENSE)
+
 **Make AI write like a person — not like AI.**
 
 A universal literary-writing skill for agentic coding tools — Claude Code, Codex, Cursor, and anything that reads agent skills. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.

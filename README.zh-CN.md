@@ -1,5 +1,7 @@
 # novel-script-writer
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/050729-zxn/novel-script-writer/blob/main/LICENSE)
+
 **让 AI 写得像人,不像 AI。**
 
 一个通用的文学写作 skill,适用于 Claude Code、Codex、Cursor 等任何能读 agent skills 的工具。写小说、网文、短篇、AI 短剧剧本——任何类型、任何文风、任何语言,把 AI 味洗掉,把文学手艺放回去。
