@@ -1,6 +1,6 @@
 # novel-script-writer
 
-一个通用的文学写作 Claude Code skill。写小说、网文、短篇、AI 短剧剧本——任何类型、任何文风、任何语言,把 AI 味洗掉,把文学手艺放回去。
+一个通用的文学写作 skill,适用于 Claude Code、Codex、Cursor 等任何能读 agent skills 的工具。写小说、网文、短篇、AI 短剧剧本——任何类型、任何文风、任何语言,把 AI 味洗掉,把文学手艺放回去。
 
 ## 为什么做这个
 
@@ -28,7 +28,17 @@ mkdir -p ~/.claude/skills
 cp -r novel-script-writer ~/.claude/skills/
 ```
 
-然后直接让 Claude 写就行。
+## 跨工具通用
+
+这个 skill 是纯 Markdown(`SKILL.md` + `references/` + `scripts/`),不依赖 Claude 专属运行时。`name` / `description` 前置元数据用的是通用 agent-skills 约定,丢进任何按目录读 skills 的工具就能用:
+
+| 工具 | skills 目录 |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex CLI | `~/.agents/skills/`(或仓库里的 `.agents/skills/`) |
+| Cursor / Antigravity | 各自的 skills 目录 |
+
+两个脚本(`deai-check.py`、`novel2docx.py`)是纯 Python,任何环境都能跑。`SKILL.md` 里唯一的工具相关细节是结构化提问(Claude 用 AskUserQuestion,其它工具退化为编号列出)。
 
 ## 用法
 

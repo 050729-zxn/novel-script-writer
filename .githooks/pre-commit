@@ -1,0 +1,26 @@
+#!/bin/sh
+# Block committing style cards that contain verbatim quotes from still-copyrighted works.
+# Enable with:  git config core.hooksPath .githooks
+
+files=$(git diff --cached --name-only --diff-filter=ACM -- 'style-cards/*')
+blocked=""
+
+for f in $files; do
+  case "$f" in
+    style-cards/README.md|style-cards/_template.md) ;;
+    *) blocked="$blocked
+$f" ;;
+  esac
+done
+
+if [ -n "$blocked" ]; then
+  echo "Commit blocked: the following style cards likely contain verbatim quotes"
+  echo "from still-copyrighted works and must stay local:"
+  echo "$blocked"
+  echo ""
+  echo "Remove them from the commit, or if you are sure they are safe, use:"
+  echo "  git commit --no-verify"
+  exit 1
+fi
+
+exit 0

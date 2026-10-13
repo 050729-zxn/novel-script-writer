@@ -1,6 +1,6 @@
 # novel-script-writer
 
-A universal literary-writing skill for Claude Code. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.
+A universal literary-writing skill for agentic coding tools — Claude Code, Codex, Cursor, and anything that reads agent skills. Write novels, web fiction, short stories, and AI short-drama scripts in any genre, any style, and any language — with the AI-flavor stripped out and the literary craft put back in.
 
 <p align="center"><img src="assets/deai-vs-ai.svg" alt="The same scene, two drafts: AI flavor vs de-AI'd" width="760"></p>
 
@@ -31,7 +31,17 @@ mkdir -p ~/.claude/skills
 cp -r novel-script-writer ~/.claude/skills/
 ```
 
-Then just ask Claude to write something. The skill triggers on requests to write or generate novels, stories, scripts, imitate an author's style, feed writing samples, or do multilingual literary work.
+## Works with any agent
+
+The skill is plain Markdown — `SKILL.md` + `references/` + `scripts/` — with no Claude-specific runtime. The `name` / `description` frontmatter follows the common agent-skills convention, so it drops into any tool that reads skills from a directory:
+
+| Tool | Skills folder |
+|---|---|
+| Claude Code | `~/.claude/skills/` |
+| Codex CLI | `~/.agents/skills/` (or `.agents/skills/` in a repo) |
+| Cursor / Antigravity | their skills folder |
+
+The two scripts (`deai-check.py`, `novel2docx.py`) are plain Python and run anywhere. The only tool-specific nicety is the structured-question tool in `SKILL.md`, which falls back to numbered questions in other agents.
 
 ## Usage
 
@@ -132,10 +142,24 @@ novel-script-writer/
 ├── scripts/
 │   ├── deai-check.py                 # AI-flavor scanner (zh/en/fr/es/de/ja)
 │   └── novel2docx.py                 # Markdown → .docx with novel typography
+├── .githooks/
+│   └── pre-commit                    # blocks committing style cards with verbatim quotes
 └── style-cards/
     ├── README.md
     └── _template.md                  # blank style-card template
 ```
+
+## Contributing & copyright note
+
+The `style-cards/` directory intentionally ships no author-specific cards — only a blank template. Distilling a still-in-copyright author (Jin Yong, Jiang Nan, etc.) produces cards full of verbatim quotes; keep those **local only**, never commit them. The repo's `.gitignore` already ignores `style-cards/*.md` (except `README.md` and `_template.md`).
+
+To enforce this locally, enable the bundled pre-commit hook:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+After that, `git commit` blocks any staged file under `style-cards/` that isn't the template.
 
 ## License
 
